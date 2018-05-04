@@ -145,5 +145,6 @@ if [ "$TERM" = "linux" ]; then
     echo -en "\e]PFFFFFFF" #white
     clear #for background artifacting
 fi
-alias info="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b"
+alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b"
 export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
+alias git_add="cd ~/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push"
