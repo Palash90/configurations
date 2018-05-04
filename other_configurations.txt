@@ -1,0 +1,2 @@
+Use rtl_wifi for 'Wi-Fi Connected but internet not working issue'
+Use /etc/defaults/console-setup FONTSIZE 12x24 for better viwing in virtual terminal
