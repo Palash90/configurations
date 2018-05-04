@@ -1,3 +1,5 @@
 Use rtl_wifi for 'Wi-Fi Connected but internet not working issue'
 Use /etc/defaults/console-setup FONTSIZE 12x24 for better viwing in virtual terminal
 Use git configure credential.helper store to setup your user name and password.
+Use mps-youtube for console youtube playing
+Use lynx, w3m for web browsing
