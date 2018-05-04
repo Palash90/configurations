@@ -124,7 +124,7 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 alias g='lynx www.google.com'
-#set -o vi
+set -o vi
 alias less='less -N'
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
@@ -145,3 +145,5 @@ if [ "$TERM" = "linux" ]; then
     echo -en "\e]PFFFFFFF" #white
     clear #for background artifacting
 fi
+alias info="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b"
+export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
