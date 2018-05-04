@@ -147,4 +147,4 @@ if [ "$TERM" = "linux" ]; then
 fi
 alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b"
 export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
-alias git_add="cd ~/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push"
+alias git_add="cd ~/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
