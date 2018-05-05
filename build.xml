@@ -8,8 +8,8 @@
  	<target name="mkdir" depends="clean">
 		<mkdir dir="${build.dir}" />
 	</target>	
-	<target name="compile" depends="mkdir">
-		<javac srcdir="${src.dir}" destdir="${build.dir}"/>
+	<target name="compile" depends="mkdir"> 
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" />
 	</target>
 	<target name="run" depends="compile">
 		<java classname="main.TestMain">
