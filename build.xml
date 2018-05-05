@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="tutorial" basedir="." default="main">
+	<property name="src.dir" location="src"/>
+	<property name="build.dir" location="bin"/>
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+ 	<target name="mkdir" depends="clean">
+		<mkdir dir="${build.dir}" />
+	</target>	
+	<target name="compile" depends="mkdir">
+		<javac srcdir="${src.dir}" destdir="${build.dir}"/>
+	</target>
+	<target name="run" depends="compile">
+		<java classname="main.TestMain">
+			<classpath>
+				<pathelement path="${build.dir}"/>
+			</classpath>
+		</java>
+	</target>
+	<target name="main" depends="run"/>
+</project>
