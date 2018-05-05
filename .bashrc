@@ -124,7 +124,6 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 alias g='w3m www.google.com'
-set -o vi
 alias less='less -N'
 alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free"
 if [ "$TERM" = "linux" ]; then
