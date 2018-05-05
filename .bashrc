@@ -126,6 +126,11 @@ fi
 alias g='w3m www.google.com'
 set -o vi
 alias less='less -N'
+alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free"
+if [ "$TERM" = "linux" ]; then
+	export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
+fi
+alias git_add="cd ~totan/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
     echo -en "\e]P82B2B2B" #darkgrey
@@ -144,7 +149,6 @@ if [ "$TERM" = "linux" ]; then
     echo -en "\e]P7E5E5E5" #lightgrey
     echo -en "\e]PFFFFFFF" #white
     clear #for background artifacting
+    # Sometimes the virtual terminal does not configure properly. So added this line to force.
+    setupcon
 fi
-alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free"
-export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
-alias git_add="cd ~totan/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
