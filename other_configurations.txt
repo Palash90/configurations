@@ -5,3 +5,4 @@ Use mps-youtube for console youtube playing
 Use w3m for web browsing
 After fresh installation, run git config for all accounts especially for root
 Create soft links in all the accounts for bashrc and vimrc
+You also have another git
