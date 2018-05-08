@@ -125,7 +125,7 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 alias g='w3m www.google.com'
 alias less='less -N'
-alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free"
+alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free && /mnt/sda3/Softwares/scripts/powerDraw.sh"
 if [ "$TERM" = "linux" ]; then
 	export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
 fi
