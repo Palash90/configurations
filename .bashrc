@@ -130,7 +130,7 @@ if [ "$TERM" = "linux" ]; then
 	export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
 fi
 alias git_add="cd ~totan/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
-alias git_add_vi="cd ~totan/git/vi-essentials/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
+alias git_add_vi="cd ~totan/git/vi/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
     echo -en "\e]P82B2B2B" #darkgrey
