@@ -1,5 +1,5 @@
 "set autoindent
 set number
 set ruler
-set smartindent
+set nosmartindent
 set tw=60
