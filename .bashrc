@@ -129,8 +129,7 @@ alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free && /mnt/sd
 if [ "$TERM" = "linux" ]; then
 	export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
 fi
-alias git_add="cd ~totan/git/configurations/ && git add --all && git commit -m \"Commited by Shell\" && git push && cd -"
-alias git_add="git add --all && git commit -m \"Commited by Shell using me@palash90.in\" && git push && cd -"
+alias git_add="git add --all && git commit -m \"Commited by Shell using me@palash90.in\" && git push "
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
     echo -en "\e]P82B2B2B" #darkgrey
