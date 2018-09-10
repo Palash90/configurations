@@ -5,4 +5,19 @@ Use mps-youtube for console youtube playing
 Use w3m for web browsing
 After fresh installation, run git config for all accounts especially for root
 Create soft links in all the accounts for bashrc and vimrc
-You also have another git
+You also have another git - Weathered Paperweight
+
+Setup instruction for rtl_wifi (Your Device is rtl8723be, you can check with inxi -n)
+=====================================================================================
+
+01. Go to /mnt/sda3/Softwares/rtl-wifi-driver
+02. sudo chmod 0777 rtlwifi_new -R
+03. cd rtlwifi_new
+04. make
+05. sudo make install
+06. sudo modprobe rtl8723be 
+07. /etc/modprobe.d
+08. sudo vi rtl8723be.conf
+09. Add this line - options rtl8723be fwlps=N ips=N 
+10. sudo modprobe rtl8723be
+
