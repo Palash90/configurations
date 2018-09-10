@@ -9,7 +9,6 @@ You also have another git - Weathered Paperweight
 
 Setup instruction for rtl_wifi (Your Device is rtl8723be, you can check with inxi -n)
 =====================================================================================
-
 01. Go to /mnt/sda3/Softwares/rtl-wifi-driver
 02. sudo chmod 0777 rtlwifi_new -R
 03. cd rtlwifi_new
@@ -20,4 +19,36 @@ Setup instruction for rtl_wifi (Your Device is rtl8723be, you can check with inx
 08. sudo vi rtl8723be.conf
 09. Add this line - options rtl8723be fwlps=N ips=N 
 10. sudo modprobe rtl8723be
+
+
+Install Arch Linux on VirtualBox
+================================
+1. Install VirtualBox
+2. Check if the vdi Image can be reused for VirtaulBox. 
+3. If not, you already have the ISO.
+4. Add a new oprating system into it and mount the ISO and live boot.
+5. Run fdisk /dev/sda
+   a. Type n for a new partition.
+   b. Type p for Primary Partition
+   c. Partition Number is 1
+   d. Leave defaults for First and Last Sector
+   e. Enter w for saving and quitting.
+6. mkfs.ext4 /dev/sda1
+7. mount /dev/sda1 /mnt
+8. mkdir /mnt/home
+9. pacstrap /mnt base base-devel
+10. genfstab -U /mnt >> /mnt/etc/fstab
+11. arch-chroot /mnt
+12. echo arch > /etc/hostname
+13. echo arch > /etc/hosts
+14. pacman -S grub
+15. grub-install /dev/sda
+16. grub-mkconfig -o /boot/grub/grub.cfg
+17. passwd
+18. pacman -Syu
+19. Reboot without ISO
+20. If required, add Desktop Environment. Read internet
+
+
+
 
