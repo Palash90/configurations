@@ -41,14 +41,17 @@ Install Arch Linux on VirtualBox
 11. arch-chroot /mnt
 12. echo arch > /etc/hostname
 13. echo arch > /etc/hosts
-14. pacman -S grub
-15. grub-install /dev/sda
-16. grub-mkconfig -o /boot/grub/grub.cfg
-17. passwd
-18. pacman -Syu
-19. Reboot without ISO
-20. If required, add Desktop Environment. Read internet
-
-
-
+14. vi /etc/locale.gen --> Uncomment en_US.UTF-8 UTF-8
+15. locale-gen
+16. vi /etc/locale.conf --> Add LANG=en_US.UTF-8
+17. ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+18. hwclock --systohc --utc
+19. systemctl enable dhcpcd
+20. pacman -S grub
+21. grub-install /dev/sda
+22. grub-mkconfig -o /boot/grub/grub.cfg
+23. passwd
+24. pacman -Syu
+25. Reboot without ISO
+26. If required, add Desktop Environment. Read internet
 
