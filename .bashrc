@@ -126,9 +126,6 @@ fi
 alias g='w3m www.google.com'
 alias less='less -N'
 alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free && /mnt/sda3/Softwares/scripts/powerDraw.sh"
-if [ "$TERM" = "linux" ]; then
-	export PROMPT_COMMAND="echo -n \[\$(date +%I:%M:%S)\]\ "
-fi
 alias git_add="git add --all && git commit -m \"Commited by Shell using me@palash90.in\" && git push "
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
@@ -152,4 +149,5 @@ if [ "$TERM" = "linux" ]; then
     setupcon
 fi
 set -o vi
-PS1="\[\e[1;32m\]me@`uname -s`:\[\e[1;34m\]\w\$\[\e[00m\]"
+PS1='\[\e[1;32m\]me@`uname -s`:\[\e[1;31m\]`date "+%F %T"`:\[\e[1;34m\]\w\$\[\e[00m\]'
+#PS1='\[\e[1;32m\]me@`uname -s`:\[\e[1;34m\]\w\$\[\e[00m\]'
