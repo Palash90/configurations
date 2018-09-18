@@ -152,3 +152,4 @@ if [ "$TERM" = "linux" ]; then
     setupcon
 fi
 set -o vi
+PS1="\[\e[1;32m\]me@`uname -s`:\[\e[1;34m\]\w\$\[\e[00m\]"
