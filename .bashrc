@@ -147,7 +147,10 @@ if [ "$TERM" = "linux" ]; then
     clear #for background artifacting
     # Sometimes the virtual terminal does not configure properly. So added this line to force.
     setupcon
+    # Change the Prompt to include date in it
+    PS1='\[\e[1;32m\]me@`uname -s`\[\e[1;33m\]:\[\e[1;31m\]`date "+%F %T"`\[\e[1;33m\]:\[\e[1;34m\]\w\$\[\e[00m\]'
+else
+    # Custom Command for GUI
+    PS1='\[\e[1;32m\]me@`uname -s`\[\e[1;33m\]:\[\e[1;34m\]\w\$\[\e[00m\]'
 fi
 set -o vi
-PS1='\[\e[1;32m\]me@`uname -s`:\[\e[1;31m\]`date "+%F %T"`:\[\e[1;34m\]\w\$\[\e[00m\]'
-#PS1='\[\e[1;32m\]me@`uname -s`:\[\e[1;34m\]\w\$\[\e[00m\]'
