@@ -127,6 +127,7 @@ alias g='w3m www.google.com'
 alias less='less -N'
 alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free && /mnt/sda3/Softwares/scripts/powerDraw.sh"
 alias git_add="git add --all && git commit -m \"Commited by Shell using me@palash90.in\" && git push "
+alias stec="DISPLAY=:1 eclimd -b"
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
     echo -en "\e]P82B2B2B" #darkgrey
@@ -151,6 +152,12 @@ if [ "$TERM" = "linux" ]; then
     PS1='\[\e[1;35m\]`echo "\n" && acpi -b && date "+%F %T"`\[\e[1;33m\] : \[\e[1;34m\]\w \$ \[\e[00m\]'
 else
     # Custom Command for GUI
-    PS1='\[\e[1;32m\]me@`uname -s`\[\e[1;33m\]:\[\e[1;34m\]\w \$ \[\e[00m\]'
+    PS1='\[\e[1;32m\]me@linux\[\e[1;33m\]:\[\e[1;34m\]\w \$ \[\e[00m\]'
 fi
 set -o vi
+
+PATH="/home/palash/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/palash/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/palash/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/palash/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/palash/perl5"; export PERL_MM_OPT;
