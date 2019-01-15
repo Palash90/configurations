@@ -126,7 +126,7 @@ fi
 alias g='w3m www.google.com'
 alias less='less -N'
 alias inf="date +%A\ %d/%m/%Y\ %I:%M:%S\ %p && cal && acpi -b && free && /mnt/sda3/Softwares/scripts/powerDraw.sh"
-alias git_add="git add --all && git commit -m \"Commited by Shell using me@palash90.in\" && git push "
+alias git_add="git add --all && git commit -m \"Commited by Shell using \" && git push "
 alias stec="DISPLAY=:1 eclimd -b"
 if [ "$TERM" = "linux" ]; then
     echo -en "\e]P0232323" #black
