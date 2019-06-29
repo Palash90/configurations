@@ -156,9 +156,11 @@ else
 fi
 set -o vi
 
-PATH="/home/palash/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PATH="/home/palash/perl5/bin${PATH:+:${PATH}}:$HOME/dotnet:/etc/usr/bin"; export PATH;
 PERL5LIB="/home/palash/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/palash/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/palash/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/palash/perl5"; export PERL_MM_OPT;
-
+alias fd='firebase deploy --project my-site-9f0f7'
+alias fs='firebase serve --project my-site-9f0f7'
+alias nuget="mono /usr/local/bin/nuget.exe"
