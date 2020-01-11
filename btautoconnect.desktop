@@ -1,0 +1,10 @@
+#Copy this file to ~/.config/autostart
+[Desktop Entry]
+Type=Application
+Exec=/bin/bash /home/palash/bin/btautoconnect.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=BTAutoConnect
+X-GNOME-Autostart-Delay=5
+Comment=Starts Bluetooth speaker

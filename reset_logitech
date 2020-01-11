@@ -1,0 +1,4 @@
+#!/bin/bash
+# Copy this script to /usr/local/bin
+modprobe -r hid_logitech_dj
+modprobe    hid_logitech_dj
