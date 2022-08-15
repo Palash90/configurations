@@ -2,7 +2,7 @@ set autoindent
 set number
 set ruler
 set nosmartindent
-set tw=60
+"set tw=60
 set shellcmdflag=-ic
 set nocp
 "Take care of indents for Java.
