@@ -1,7 +1,6 @@
-set autoindent
 set number
 set ruler
-set nosmartindent
+set smartindent
 "set tw=60
 set shellcmdflag=-ic
 set nocp
@@ -11,3 +10,5 @@ set si
 set shiftwidth=4
 set cinoptions+=j1
 set nocompatible
+syntax on
+set cindent
