@@ -12,3 +12,6 @@ set cinoptions+=j1
 set nocompatible
 syntax on
 set cindent
+set tabstop=4
+set expandtab
+filetype indent on
