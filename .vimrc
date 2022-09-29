@@ -15,3 +15,4 @@ set cindent
 set tabstop=4
 set expandtab
 filetype indent on
+let python_highlight_all = 1

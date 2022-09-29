@@ -20,6 +20,9 @@ Setup instruction for rtl_wifi (Your Device is rtl8723be, you can check with inx
 09. Add this line - options rtl8723be fwlps=N ips=N 
 10. sudo modprobe rtl8723be
 
+vim python support
+==================
+https://github.com/hdima/python-syntax
 
 Install Arch Linux on VirtualBox
 ================================
