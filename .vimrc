@@ -22,7 +22,10 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 20
 augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
+    autocmd!
+    autocmd VimEnter * :Vexplore
+    autocmd VimEnter * wincmd l
+    "  autocmd VimEnter * :sp
+    "  autocmd VimEnter * :resize 25
 augroup END
 
