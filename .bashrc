@@ -119,3 +119,7 @@ fi
 
 export TERM=xterm-color
 . "$HOME/.cargo/env"
+
+format(){
+    find . -type f -name "$1" -print0|xargs -0 ex +"norm gg=G" +"wq"
+}
