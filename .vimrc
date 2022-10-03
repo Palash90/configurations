@@ -25,7 +25,8 @@ augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * :Vexplore
     autocmd VimEnter * wincmd l
-    "  autocmd VimEnter * :sp
-    "  autocmd VimEnter * :resize 25
+    autocmd VimEnter * :term
+    autocmd VimEnter * wincmd j
+    autocmd VimEnter * :resize +10
 augroup END
 

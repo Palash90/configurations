@@ -132,3 +132,13 @@ gp(){
     git push
     return
 }
+
+ide(){
+    tmux new-session  
+    tmux split-window  "vi" 
+    tmux split-window  "bash"  
+    tmux resize-pane -D 10
+    tmux select-layout even-vertical
+}
+
+
