@@ -30,5 +30,11 @@ augroup ProjectDrawer
     autocmd VimEnter * :resize +10
     autocmd VimEnter * wincmd x
     autocmd VimEnter * wincmd k
+    autocmd VimEnter * :vert term
+    autocmd VimEnter * wincmd x
+    autocmd VimEnter * wincmd h
+    autocmd VimEnter * :vertical resize -15
+    autocmd VimEnter * wincmd l
+    autocmd VimEnter * :vertical resize +20
 augroup END
 
