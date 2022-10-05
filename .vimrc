@@ -21,6 +21,10 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 20
+"nnoremap <silent> <c-Up> :resize -1<CR>
+"nnoremap <silent> <c-Down> :resize +1<CR>
+nnoremap <silent> <c-left> :vertical resize -1<CR>
+nnoremap <silent> <c-right> :vertical resize +1<CR>
 augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * :Vexplore
