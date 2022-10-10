@@ -41,6 +41,6 @@ augroup ProjectDrawer
     autocmd VimEnter * :vertical resize -15
     autocmd VimEnter * wincmd l
     autocmd VimEnter * :vertical resize +20
-    autocmd BufWritePre * :norm gg=G
+    autocmd BufWritePre * :norm gg=G | '' 
 augroup END
 
