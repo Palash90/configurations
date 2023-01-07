@@ -6,16 +6,6 @@ counter=0
 
 while :
 do
-    if [ `expr $counter % 4` -eq 0 ]
-    then
-        echo "Take a break" | text2wave -o a.wav && play a.wav
-    fi
-
-    if [ `expr $counter % 5` -eq 0 ]
-    then
-        echo "Break Over" | text2wave -o a.wav && play a.wav
-    fi
-
     number=$(pacmd list-sink-inputs | grep -c "state: RUNNING")
     echo "$number"
     if [ $number -lt 1 ]
