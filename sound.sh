@@ -9,7 +9,7 @@ do
 	if [ $number -lt 1 ]
 	then
 		echo "Play Synth"
-		play -n synth 1 sin 30 
+		play -n synth 0.0005 sin 20 
 	fi	
 	sleep 1
 done
